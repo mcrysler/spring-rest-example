@@ -38,6 +38,7 @@ public class SimpleControllerTest
         String response = restTemplate.getForObject(
                 "http://localhost:8080/person", String.class);
         assertNotNull(response);
+        System.out.println(response);
 
         // Parse the JSON
         JSONParser parser = new JSONParser();
@@ -45,14 +46,14 @@ public class SimpleControllerTest
         assertNotNull(json);
 
         // Verify the first and last name
-        assertEquals("Brennan", json.get("firstName"));
-        assertEquals("Matthew", json.get("lastName"));
+        assertEquals("Bin", json.get("firstName"));
+        assertEquals("Wang", json.get("lastName"));
 
         // Get the array of hobbies
         JSONArray hobbies = (JSONArray) json.get("hobbies");
         assertNotNull(hobbies);
         assertEquals(2, hobbies.size());
-        assertEquals("Programming", hobbies.get(0));
-        assertEquals("Soccer", hobbies.get(1));
+        assertEquals("Being Awesome", hobbies.get(0));
+        assertEquals("Big Data", hobbies.get(1));
     }
 }

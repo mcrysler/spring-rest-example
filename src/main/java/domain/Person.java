@@ -31,8 +31,8 @@ public class Person
     {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.hobbies.add("Programming");
-        this.hobbies.add("Soccer");
+        this.hobbies.add("Being Awesome");
+        this.hobbies.add("Big Data");
     }
 
     /**

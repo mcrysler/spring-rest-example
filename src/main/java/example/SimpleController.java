@@ -19,6 +19,6 @@ public class SimpleController
     @ResponseBody
     public Person getPerson()
     {
-        return new Person("Brennan", "Matthew");
+        return new Person("Bin", "Wang");
     }
 }
